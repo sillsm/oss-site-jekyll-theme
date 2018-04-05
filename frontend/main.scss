@@ -1,5 +1,4 @@
-$color: red;
-
-* {
-  color: $color
-}
+@import "./components/core/reset";
+@import "./components/core/core";
+@import "./components/core/scaffolding";
+@import "~github-markdown-css/github-markdown.css";
