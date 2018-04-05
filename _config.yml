@@ -1,0 +1,31 @@
+# Where things are
+destination: ./_site
+
+include:
+ - index.html
+
+keep_files:
+ - "assets"
+
+# Serving
+detach:  false
+port:    4000
+baseurl: "" # does not include hostname
+show_dir_listing: true
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+
+#kramdown:
+#  auto_ids:      true
+#  entity_output: as_char
+#  toc_levels:    1..6
+#  smart_quotes:  lsquo,rsquo,ldquo,rdquo
+#  input:         GFM
+#  hard_wrap:     false
+#  footnote_nr:   1
+#  show_warnings: false

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>{{ title }}</title>
+<link rel="stylesheet" href="{% if jekyll.environment == "development" %}http://localhost:9000{% endif %}/frontend/main.css">
+</head>
+<body>
+
+{{ content }}
+
+<script src="{% if jekyll.environment == "development" %}http://localhost:9000{% endif %}/frontend/index.js"></script>
+</body>
+</html>
