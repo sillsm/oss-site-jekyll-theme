@@ -13,9 +13,8 @@ module.exports = (env) => {
     },
 
     output: {
-      path: resolve(__dirname, 'build'),
-      filename: '[name].js',
-      publicPath: '/frontend/'
+      path: resolve(__dirname, 'assets/build'),
+      filename: '[name].js'
     },
 
     module: {

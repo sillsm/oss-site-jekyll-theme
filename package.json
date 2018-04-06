@@ -26,6 +26,6 @@
     "webpack-dev-server": "2"
   },
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack -w"
   }
 }
