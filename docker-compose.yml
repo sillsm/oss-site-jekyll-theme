@@ -11,4 +11,4 @@ services:
       - ./:/srv/jekyll
     environment:
       JEKYLL_ENV: development
-    command: jekyll serve
+    command: jekyll serve --watch --force_polling

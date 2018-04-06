@@ -1,0 +1,10 @@
+@import '../core/config';
+@import '../core/utils';
+
+$sidebar-width: 240px;
+
+.sidebar {
+  width: $sidebar-width;
+  max-width: $sidebar-width;
+
+}
