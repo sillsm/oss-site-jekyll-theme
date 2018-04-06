@@ -12,4 +12,4 @@ services:
     working_dir: /code
     environment:
       JEKYLL_ENV: development
-    command: jekyll serve --watch --force_polling
+    command: jekyll serve --watch --force_polling --host=0.0.0.0

@@ -1,8 +1,7 @@
 # Where things are
 destination: ./_site
 
-include:
- - index.html
+exclude: ["Gemfile", "Gemfile.lock", "node_modules", ".idea", ".git", "_site"]
 
 keep_files:
  - "assets"
