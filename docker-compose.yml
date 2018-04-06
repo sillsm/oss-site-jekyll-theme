@@ -8,7 +8,8 @@ services:
     ports:
       - 4000:4000
     volumes:
-      - ./:/srv/jekyll
+      - ./:/code
+    working_dir: /code
     environment:
       JEKYLL_ENV: development
     command: jekyll serve --watch --force_polling
