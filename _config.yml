@@ -1,5 +1,4 @@
-# Where things are
-destination: ./_site
+source: ./demo-site
 
 exclude: ["Gemfile", "Gemfile.lock", "node_modules", ".idea", ".git", "_site"]
 
@@ -7,8 +6,8 @@ keep_files:
  - "assets"
 
 # Serving
-detach:  false
-port:    4000
+host: 0.0.0.0
+port: 4000
 baseurl: "" # does not include hostname
 
 defaults:
@@ -17,13 +16,3 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
-
-#kramdown:
-#  auto_ids:      true
-#  entity_output: as_char
-#  toc_levels:    1..6
-#  smart_quotes:  lsquo,rsquo,ldquo,rdquo
-#  input:         GFM
-#  hard_wrap:     false
-#  footnote_nr:   1
-#  show_warnings: false

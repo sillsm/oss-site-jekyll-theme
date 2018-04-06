@@ -5,6 +5,8 @@ services:
     build:
       dockerfile: ./Dockerfile
       context: ./
+    restart: always
+    tty: true
     ports:
       - 4000:4000
     volumes:
@@ -12,4 +14,5 @@ services:
     working_dir: /code
     environment:
       JEKYLL_ENV: development
-    command: jekyll serve --watch --force_polling --host=0.0.0.0
+#    command: tail -f package.json
+    entrypoint: /code/docker-entrypoint.sh
