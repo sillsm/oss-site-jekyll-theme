@@ -1,9 +1,10 @@
 @import '../core/config';
 @import '../core/utils';
 
-$sidebar-width: 240px;
+.sidebar {
+  width: $sidebar-width;
+  max-width: $sidebar-width;
+  background-color: $color-silver-gray;
 
-.header {
-  width: 100%;
-  height: 70px;
+  overflow-y: auto;
 }
