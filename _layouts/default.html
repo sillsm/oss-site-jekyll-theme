@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>{{ title }}</title>
-  <link rel="stylesheet" href="{% if jekyll.environment == "development" %}http://localhost:9000{% endif %}/frontend/main.css">
+  <link rel="stylesheet" href="{{ "assets/build/main.css" | relative_url }}">
 </head>
 <body>
 <div class="page">
   {{ content }}
 </div>
 
-<script src="{% if jekyll.environment == "development" %}http://localhost:9000{% endif %}/frontend/index.js"></script>
+<script src="{{ "assets/build/main.js" | relative_url }}"></script>
 </body>
 </html>
