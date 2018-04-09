@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 bundle install --local
 rake preview
