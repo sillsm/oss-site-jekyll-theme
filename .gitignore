@@ -1,4 +1,6 @@
 .idea
+!.idea/runConfigurations/Run_Site.xml
+!.idea/runConfigurations/Webpack.xml
 *.gem
 .bundle
 .sass-cache
