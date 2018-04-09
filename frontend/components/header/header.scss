@@ -11,6 +11,10 @@
 }
 
 .header-logo {
+  @include breakpoint-down(md) {
+    min-width: $sidebar-width-md;
+  }
+
   min-width: $sidebar-width;
 }
 
@@ -21,7 +25,7 @@
   flex-grow: 1;
   flex-basis: 0;
   flex-shrink: 0;
-  max-width: 100%;
+  max-width: 1024px;
 }
 
 .header-links-list__item {

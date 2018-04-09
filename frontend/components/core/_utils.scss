@@ -1,1 +1,189 @@
 @import './config';
+
+/**
+ * Create media query UP or DOWN
+ * @param {String|Number} $key
+ * @param {String|Number} $value
+ * @param {String} $direction
+ * @private
+ * @returns {String}
+ */
+@mixin _create-media-query($key, $value, $direction: $default-breakpoints-direction) {
+  // If break == default - NOT create a @media query
+  @if ($key == default) {
+    @content;
+  } @else {
+
+    // Detect direction: Up or Down
+    @if ($direction == down and $value != '') {
+      @media screen and (max-width: #{$value}) {
+        @content;
+      }
+    } @else if ($direction == up and $value != '') {
+      @media screen and (min-width: #{$value}) {
+        @content;
+      }
+    }
+  }
+}
+
+/**
+ * Create media query between two values
+ * @param {String|Number} $value1
+ * @param {String|Number} $value2
+ * @private
+ * @returns {String}
+ */
+@mixin _create-media-query-between($value1, $value2) {
+  @if ($value1 != '' and $value2 != '') {
+    @media screen and (min-width: #{$value1}) and (max-width: #{$value2}) {
+      @content;
+    }
+  }
+};
+
+/**
+ * Validate and get media breakpoint
+ * @param {String|Number} $key
+ * @param {Map} $breakpoints-with-default
+ * @private
+ * @returns {String}
+ */
+@function _get-value($key, $breakpoints-with-default: $breakpoints-with-default) {
+  $value: '';
+
+  @if ((type_of($key) == string) and map_has_key($breakpoints-with-default, $key)) {
+    $value: map_get($breakpoints-with-default, $key);
+  } @else if (type_of($key) == number) {
+    $value: $key;
+  }
+
+  @return $value
+}
+
+/**
+ * Create media breakpoint or simple styles without a breakpoint
+ * @param {String|Number} $key
+ * @param {Map} $breakpoints-with-default
+ * @param {String} $direction down|up
+ * @returns {String}
+ */
+@mixin _create-breakpoint($key, $breakpoints-with-default: $breakpoints-with-default, $direction: $default-breakpoints-direction) {
+  $value: _get-value($key, $breakpoints-with-default);
+
+  @include _create-media-query($key, $value, $direction) {
+    @content
+  }
+}
+
+/**
+ * Create all breakpoints.
+ * .CLASS_NAME-sm, .CLASS_NAME-md etc.
+ * @param {String} $selector
+ * @param {Map} $breakpoints-with-default
+ * @param {String} $direction down|up
+ * @returns {String}
+ */
+@mixin breakpoints-all($selector, $breakpoints-with-default: $breakpoints-with-default, $direction: $default-breakpoints-direction) {
+
+  @if ($direction == down) {
+    @each $key in map_keys($breakpoints-with-default-reverse) {
+      @include _create-breakpoint($key, $breakpoints-with-default-reverse, $direction) {
+        @if ($key == default) {
+          #{$selector} {
+            @content
+          }
+        } @else {
+          #{$selector}#{$block-delimiter}#{$key} {
+            @content
+          }
+        }
+      }
+    }
+  } @else if ($direction == up) {
+    @each $key in map_keys($breakpoints-with-default) {
+      @include _create-breakpoint($key, $breakpoints-with-default, $direction) {
+        @if ($key == default) {
+          #{$selector} {
+            @content
+          }
+        } @else {
+          #{$selector}#{$block-delimiter}#{$key} {
+            @content
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Create DOWN media breakpoints
+ * @example @media screen and (max-width: BREAK_SIZE) { ... }
+ * @param {String|Number} $breakpoint
+ * @param {Map} $breakpoints-with-default
+ * @returns {String}
+ */
+@mixin breakpoint-down($breakpoint, $breakpoints-with-default: $breakpoints-with-default) {
+  @include _create-breakpoint($breakpoint, $breakpoints-with-default, down) {
+    @content
+  }
+};
+
+/**
+ * Create UP media breakpoints
+ * @example @media screen and (min-width: BREAK_SIZE) { ... }
+ * @param {String|Number} $breakpoint
+ * @param {Map} $breakpoints-with-default
+ * @returns {String}
+ */
+@mixin breakpoint-up($breakpoint, $breakpoints-with-default: $breakpoints-with-default) {
+  @include _create-breakpoint($breakpoint, $breakpoints-with-default, up) {
+    @content
+  }
+}
+
+/**
+ * Create media breakpoints between UP and Down
+ * @example @media screen and (min-width: BREAK_SIZE_1) and (max-width: BREAK_SIZE_2) { ... }
+ * @param {String|Number} $breakpoint-up
+ * @param {String|Number} $breakpoint-down
+ * @param {Map} $breakpoints-with-default
+ * @returns {String}
+ */
+@mixin breakpoint-between($breakpoint-up, $breakpoint-down, $breakpoints-with-default: $breakpoints-with-default) {
+  $value1: _get-value($breakpoint-up, $breakpoints-with-default);
+  $value2: _get-value($breakpoint-down, $breakpoints-with-default);
+
+  @include _create-media-query-between($value1, $value2) {
+    @content
+  }
+}
+
+
+// https://gist.github.com/seanislegend/107ccf9c81ec9fd1aae0
+@function map-reverse($map) {
+  $result: null;
+
+  @if type-of($map) == 'map' {
+    $keys: map-keys($map);
+    $map-reversed: ();
+
+    @for $i from length($keys) through 1 {
+      $map-reversed: map-merge(
+          $map-reversed,
+          (nth($keys, $i): map-get($map, nth($keys, $i)))
+      );
+    }
+
+    @if type-of($map-reversed) == 'map' {
+      $result: $map-reversed;
+    } @else {
+      @warn 'There was an error reversing the order of "#{$map}"';
+    }
+  } @else {
+    @warn '"#{$map}" is not a valid map';
+  }
+
+  @return $result;
+}

@@ -2,6 +2,11 @@
 @import '../core/utils';
 
 .sidebar {
+  @include breakpoint-down(md) {
+    width: $sidebar-width-md;
+    max-width: $sidebar-width-md;
+  }
+
   width: $sidebar-width;
   max-width: $sidebar-width;
   background-color: $color-athens-gray;
@@ -11,18 +16,38 @@
   top: 0;
   bottom: 0;
   left: 0;
-}
-
-.toc-tree {
-  line-height: 17px;
-
-  box-sizing: border-box;
-  padding: 30px 0 10px;
 
   overflow-y: auto;
 }
 
+.toc-tree {
+  box-sizing: border-box;
+  padding: 30px 0 10px;
+}
+
 .toc-tree__item {
-  font-size: 16px;
   font-weight: 500;
+}
+
+.toc-tree__link {
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  color: $color-dove-gray;
+  font-size: 16px;
+  line-height: 18px;
+
+  padding: $base-unit / 2 $base-unit $base-unit / 2 $base-unit * 3;
+
+  &:hover {
+    color: $color-dove-gray;
+    text-decoration: underline;
+  }
+
+  &._active {
+    font-weight: bold;
+    color: $color-dark;
+    text-decoration: none !important;
+    background-color: darken($color-athens-gray, 3%);
+  }
 }

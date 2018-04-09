@@ -33,6 +33,16 @@ module.exports = (env) => {
               'sass-loader'
             ]
           })
+        },
+
+        {
+          test: /\.css$/,
+          use: extractor.extract({
+            use: [
+              'css-loader',
+              'postcss-loader'
+            ]
+          })
         }
       ]
     },
