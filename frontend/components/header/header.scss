@@ -6,6 +6,8 @@
   width: 100%;
   height: $header-height;
   background-color: $color-cod-gray;
+
+  text-rendering: optimizeLegibility;
 }
 
 .header-logo {
