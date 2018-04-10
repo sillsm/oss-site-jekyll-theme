@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {% include document-head.html %}
+</head>
+<body>
+<div class="page _docs">
+  <div class="page__header">
+    {% include header.html %}
+  </div>
+  <div class="page__content">
+    {% include sidebar.html %}
+
+    <article class="article-content">
+      <div class="article-content__body markdown-body">
+        {{ content }}
+      </div>
+    </article>
+  </div>
+</div>
+
+{% include scripts.html %}
+</body>
+</html>

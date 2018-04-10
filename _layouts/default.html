@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ title }}</title>
-  <link rel="stylesheet" href="{{ "assets/build/main.css" | relative_url }}">
+  {% include document-head.html %}
 </head>
 <body>
-<div class="page">
+<main class="page" role="main">
   {{ content }}
-</div>
-
-<script src="{{ "assets/build/main.js" | relative_url }}"></script>
+</main>
+{% include scripts.html %}
 </body>
 </html>
