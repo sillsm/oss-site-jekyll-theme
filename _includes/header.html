@@ -3,23 +3,14 @@
 
   </div>
   <ul class="header-links-list">
-    <li class="header-links-list__item">
-      <a href="" class="header-links-list__link">Item1</a>
-    </li>
-    <li class="header-links-list__item">
-      <a href="" class="header-links-list__link">Item2</a>
-    </li>
-    <li class="header-links-list__item">
-      <a href="" class="header-links-list__link">Item3</a>
-    </li>
-    <li class="header-links-list__item">
-      <a href="" class="header-links-list__link">Item4</a>
-    </li>
-    <li class="header-links-list__item">
-      <a href="" class="header-links-list__link">Item4</a>
-    </li>
-    <li class="header-links-list__item">
-      <a href="" class="header-links-list__link">Item4</a>
-    </li>
+    {% for section in site.data.sections %}
+      <li class="header-links-list__item">
+        {% if page.url == section.url %}
+          <a href="{{section.url}}" class="header-links-list__link _active">{{section.title}}</a>
+        {% else %}
+          <a href="{{section.url}}" class="header-links-list__link">{{section.title}}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
   </ul>
 </header>

@@ -1,0 +1,16 @@
+- title: Servers
+  color: purple
+  url: /servers/index.html
+  icon: cloud
+  summary: creating web applications and services
+
+- title: Samples
+  color: primary
+  url: /samples/index.html
+  icon: toolbox_alt
+  summary: samples and open source projects
+
+- title: Advanced
+  url: /advanced/index.html
+  summary: advanced topics and implementation details
+
