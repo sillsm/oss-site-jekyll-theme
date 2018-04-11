@@ -1,7 +1,30 @@
 <div class="sidebar">
-  <ul class="toc-tree">
-    {% for item in site.data.sections %}
-      {{item.title}}
-    {% endfor %}
-  </ul>
+  <div class="toc-tree">
+    {% if page.section != null %}
+      {% assign section_pages = site.pages | where: 'section', page.section %}
+      {% assign sorted_section_pages = section_pages | sort: 'title', 'last' %}
+      {% assign sorted_section_pages = sorted_section_pages | sort: 'priority', 'last' %}
+
+
+      {% for section in site.data.sections %}
+        {% if section.category == page.section %}
+          <a class="toc-tree__title" href="{{ section.url| prepend: site.baseurl }}">{{section.title}}</a>
+
+          <ul class="toc-tree__links-list">
+            {% for item in sorted_section_pages %}
+              {% if item.section == page.section and item.section != item.title %}
+                <li class="toc-tree__item">
+                  {% if (item.url == page.url) %}
+                    <a class="toc-tree__link _active">{{ item.title }}</a>
+                  {% else %}
+                    <a href="{{ item.url | prepend: site.baseurl }}" class="toc-tree__link">{{ item.title }}</a>
+                  {% endif %}
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  </div>
 </div>

@@ -2,6 +2,12 @@
 layout: default
 ---
 
+{% if page.caption_title != null %}
+  {% assign title = page.caption_title %}
+{% else %}
+  {% assign title = page.title %}
+{% endif %}
+
 <div class="page__header">
   {% include header.html %}
 </div>
@@ -10,8 +16,27 @@ layout: default
   {% include sidebar.html %}
 
   <article class="article-content">
+    <div class="article-content__header dock-header">
+      <h1 class="dock-header__title">{{title}}</h1>
+      {% if page.status != 'todo' %}
+        <p>{% include estimated-read-time.html %}</p>
+      {% endif %}
+
+      {% if page.description != null %}
+      <p class="dock-header__description">
+        {{page.description}}
+      </p>
+      {% endif %}
+    </div>
     <div class="article-content__body markdown-body">
-      {{ content }}
+      {% if page.status == 'todo' %}
+        Coming soon...
+      {% else %}
+        {% if page.toc %}
+          <h3>Table of contents:</h3>
+        {% endif %}
+        {{ content | toc }}
+      {% endif %}
     </div>
   </article>
 </div>

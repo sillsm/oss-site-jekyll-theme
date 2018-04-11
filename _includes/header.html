@@ -5,10 +5,11 @@
   <ul class="header-links-list">
     {% for section in site.data.sections %}
       <li class="header-links-list__item">
-        {% if page.url == section.url %}
-          <a href="{{section.url}}" class="header-links-list__link _active">{{section.title}}</a>
+        {{section.section}}
+        {% if page.url == section.url or page.section == section.category %}
+          <a href="{{section.url | prepend: site.baseurl  }}" class="header-links-list__link _active">{{section.title}}</a>
         {% else %}
-          <a href="{{section.url}}" class="header-links-list__link">{{section.title}}</a>
+          <a href="{{section.url | prepend: site.baseurl }}" class="header-links-list__link">{{section.title}}</a>
         {% endif %}
       </li>
     {% endfor %}

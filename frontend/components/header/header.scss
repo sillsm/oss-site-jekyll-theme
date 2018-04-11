@@ -5,7 +5,7 @@
   display: flex;
   width: 100%;
   height: $header-height;
-  background-color: $color-cod-gray;
+  background-color: $color-dark;
 
   text-rendering: optimizeLegibility;
 }
@@ -30,7 +30,7 @@
 
 .header-links-list__item {
   align-items: stretch;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 16px;
   min-width: $base-unit * 6;
 }
@@ -39,13 +39,13 @@
   display: block;
 
   padding: $base-unit * 3;
+  outline: none;
 
-  color: $color-white;
+  color: $color-silver-gray;
   text-decoration: none;
 
   &:hover,
   &._active {
-    color: $color-azure;
-    background-color: $color-dark;
+    color: $color-white;
   }
 }
