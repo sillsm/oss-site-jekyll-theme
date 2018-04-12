@@ -30,6 +30,7 @@
   },
   "scripts": {
     "start": "webpack -w",
+    "build:docker-compose-preview": "yarn install && webpack --output-path ./demo-site/_site/assets/build",
     "build": "NODE_ENV=production webpack -p"
   }
 }

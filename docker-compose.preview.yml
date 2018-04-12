@@ -6,16 +6,17 @@ services:
       dockerfile: ./Dockerfile
       context: ./
     tty: true
+    ports:
+      - 4000:4000
     volumes:
       - ./:/code
-    working_dir: /code/demo-site
     environment:
-      JEKYLL_ENV: production
-    command: bundle exec jekyll build
+      JEKYLL_ENV: preview
+    entrypoint: /code/docker-entrypoint.sh
 
   assets:
     image: node:9
     volumes:
       - ./:/code
     working_dir: /code
-    command: yarn run build --output-path ./demo-site/_site/assets/build
+    command: yarn run build:docker-compose-preview

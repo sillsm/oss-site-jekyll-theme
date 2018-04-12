@@ -14,5 +14,4 @@ services:
     working_dir: /code
     environment:
       JEKYLL_ENV: development
-#    command: tail -f package.json
     entrypoint: /code/docker-entrypoint.sh
