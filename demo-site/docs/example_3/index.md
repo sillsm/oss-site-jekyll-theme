@@ -1,6 +1,6 @@
 ---
 title: Example 3 index page
-section: example_3
+category: example_3
 permalink: /example_3/index.html
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Example 2
-section: example_2
+category: example_2
 toc: true
 permalink: /example_2/index.html
 ---

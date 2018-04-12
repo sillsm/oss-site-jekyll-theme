@@ -1,18 +1,17 @@
 <div class="sidebar">
   <div class="toc-tree">
-    {% if page.section != null %}
-      {% assign section_pages = site.pages | where: 'section', page.section %}
-      {% assign sorted_section_pages = section_pages | sort: 'title', 'last' %}
-      {% assign sorted_section_pages = sorted_section_pages | sort: 'priority', 'last' %}
+    {% if page.category != null %}
+      {% assign category_pages = site.pages | where: 'category', page.category %}
+      {% assign sorted_category_pages = category_pages | sort: 'title', 'last' %}
+      {% assign sorted_category_pages = sorted_category_pages | sort: 'priority', 'last' %}
 
-
-      {% for section in site.data.sections %}
-        {% if section.category == page.section %}
-          <a class="toc-tree__title" href="{{ section.url| prepend: site.baseurl }}">{{section.title}}</a>
+      {% for item in site.data.navigation.main %}
+        {% if item.category == page.category %}
+          <a class="toc-tree__title" href="{{ section.url| prepend: site.baseurl }}">{{item.title}}</a>
 
           <ul class="toc-tree__links-list">
-            {% for item in sorted_section_pages %}
-              {% if item.section == page.section and item.section != item.title %}
+            {% for item in sorted_category_pages %}
+              {% if item.category == page.category and item.category != item.title %}
                 <li class="toc-tree__item">
                   {% if (item.url == page.url) %}
                     <a class="toc-tree__link _active">{{ item.title }}</a>

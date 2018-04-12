@@ -1,15 +1,18 @@
 <header class="header">
   <div class="header-logo">
-
+    <a href="/" class="header-logo__link">
+      <img src="{{site.header-logo-url}}"
+           class="header-logo__image"
+           alt="{{site.project-name}}">
+    </a>
   </div>
   <ul class="header-links-list">
-    {% for section in site.data.sections %}
+    {% for item in site.data.navigation.main %}
       <li class="header-links-list__item">
-        {{section.section}}
-        {% if page.url == section.url or page.section == section.category %}
-          <a href="{{section.url | prepend: site.baseurl  }}" class="header-links-list__link _active">{{section.title}}</a>
+        {% if page.url == item.url or page.category == item.category %}
+          <a href="{{item.url | prepend: site.baseurl  }}" class="header-links-list__link _active">{{item.title}}</a>
         {% else %}
-          <a href="{{section.url | prepend: site.baseurl }}" class="header-links-list__link">{{section.title}}</a>
+          <a href="{{item.url | prepend: site.baseurl }}" class="header-links-list__link">{{item.title}}</a>
         {% endif %}
       </li>
     {% endfor %}

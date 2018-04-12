@@ -1,1 +1,4 @@
 theme: "jetbrains-oss-jekyll-theme"
+
+project-name: 'Project name'
+header-logo-url: '/assets/images/jetbrains-simple.svg'

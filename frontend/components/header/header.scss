@@ -16,6 +16,29 @@
   }
 
   min-width: $sidebar-width;
+  position: relative;
+}
+
+.header-logo__link {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  outline: none;
+  text-decoration: none;
+  opacity: 1;
+  margin-left: $base-unit * 3;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.header-logo__image {
+  display: block;
+  width: auto;
+  height: $header-height - $base-unit * 2;
 }
 
 .header-links-list {

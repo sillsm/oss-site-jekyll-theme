@@ -1498,6 +1498,10 @@ boom@5.x.x:
   dependencies:
     hoek "4.x.x"
 
+bootstrap-4-grid@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/bootstrap-4-grid/-/bootstrap-4-grid-2.3.0.tgz#6aca109703eb052545a88a52f6518b429bbecd95"
+
 brace-expansion@^1.1.7:
   version "1.1.11"
   resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.11.tgz#3c7fcbf529d87226f3d2f52b966ff5271eb441dd"
@@ -5402,6 +5406,10 @@ punycode@^1.2.4, punycode@^1.4.1:
 punycode@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.0.tgz#5f863edc89b96db09074bad7947bf09056ca4e7d"
+
+pygments-css@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/pygments-css/-/pygments-css-1.0.0.tgz#d93aabca51fa71eff6b22b7b903a09f48810b00d"
 
 q@^1.1.2:
   version "1.5.1"

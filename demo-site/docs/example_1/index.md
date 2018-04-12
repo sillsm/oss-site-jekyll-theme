@@ -1,6 +1,6 @@
 ---
-title: Example 1
-section: example_1
+title: Example 1 index page
+category: example_1
 toc: true
 permalink: /example_1/index.html
 ---
@@ -13,7 +13,7 @@ noctis occuluere deum. Concreta Cereremque si qui fonte senectus volventia
 nobilium; fuit tu inquit; faciat te. Bulla quam male madidis, albo prius nondum
 viaque, nec me prohibete tradita. Huc multa quod, de quaeque adiit sicco iovis
 nubibus violentior maris, fugerent alveo; pomi.
-
+```ruby
     mebibyte_bin = number_printer_hardening(
             workstationMailDbms.signatureWordDcim(virus_output, 4,
             offlineSocial), bluetoothTelecommunicationsSms, logOffline) -
@@ -29,6 +29,7 @@ nubibus violentior maris, fugerent alveo; pomi.
         qwerty += cycle;
         real_ip_gigo = basic - 64;
     }
+```
 
 Caligine ne tamen pignore difficili occidit fiuntque. Vidit *adfusaeque
 haererem* Maenaliosque videre posuit fulvo dominus, simulat sed; iam verum
