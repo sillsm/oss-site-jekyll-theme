@@ -1,4 +1,6 @@
 theme: "jetbrains-oss-jekyll-theme"
 
-project-name: 'Project name'
-header-logo-url: '/assets/images/jetbrains-simple.svg'
+project_name: 'Project name'
+header_logo_url: '/assets/images/jetbrains-simple.svg'
+
+render_toc_on_docs_layout: true

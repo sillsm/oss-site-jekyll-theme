@@ -11,7 +11,7 @@
 }
 
 .header-logo {
-  @include breakpoint-down(md) {
+  @include media-breakpoint-down(md) {
     min-width: $sidebar-width-md;
   }
 

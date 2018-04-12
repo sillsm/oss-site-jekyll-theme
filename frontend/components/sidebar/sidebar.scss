@@ -2,7 +2,7 @@
 @import '../core/utils';
 
 .sidebar {
-  @include breakpoint-down(md) {
+  @include media-breakpoint-down(md) {
     width: $sidebar-width-md;
     max-width: $sidebar-width-md;
   }

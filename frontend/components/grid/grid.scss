@@ -1,27 +1,11 @@
 @import "../core/config";
 
-$grid-breakpoints: $breakpoints-with-default;
-
-
-$container-max-widths: (
-  lg: 1000px,
-  xlg: 1300px
-);
-
-$grid-columns: 6;
-$grid-gutter-width: 30px;
-
-@import "~bootstrap-4-grid/scss/grid";
+@import "~bootstrap-4-grid/scss/breakpoints/mixins/breakpoints";
+@import "~bootstrap-4-grid/scss/grid/bootstrap-grid";
+@import "~bootstrap-4-grid/scss/layout/mixins/visibility";
+@import "~bootstrap-4-grid/scss/layout/utilities/visibility";
 
 // Content container
-//.container {
-//  position: relative;
-//
-//  box-sizing: border-box;
-//  width: $grid-container-width;
-//  max-width: $grid-container-max-width;
-//  margin-right: auto;
-//  margin-left: auto;
-//  padding-right: $grid-outer-padding;
-//  padding-left: $grid-outer-padding;
-//}
+.container {
+  padding: 0 30px;
+}

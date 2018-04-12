@@ -1,24 +1,6 @@
-
-
-$breakpoints: (
-  // Medium: tablet
-  md: 1000px,
-  // Large: tablet, mini-laptop
-  lg: 1300px,
-  // Extralarge: laptop, desktop
-  xlg: 1540px,
-);
-
-
-$breakpoints-default: (
-  default: 0
-) !default;
-
-$breakpoints-with-default: map_merge($breakpoints-default, $breakpoints);
-
-
 $font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
+// Colors system
 $color-white: #ffffff;
 $color-athens-gray: #eaeaec;
 $color-silver-gray: #afb1b3;
@@ -30,7 +12,27 @@ $color-tomato: #ec5424;
 
 $base-unit: 8px;
 
+// Header
 $header-height: $base-unit * 8;
 
+// Sidebar
 $sidebar-width: $base-unit * 38;
 $sidebar-width-md: $base-unit * 28;
+
+
+// Grid
+$grid-breakpoints: (
+  xs: 0,
+  sm: 640px,
+  md: 1000px,
+  lg: 1300px,
+  xlg: 1540px,
+);
+
+$container-max-widths: (
+  md: 1000px,
+  lg: 1300px
+);
+
+$grid-columns: 6;
+$grid-gutter-width: 30px;

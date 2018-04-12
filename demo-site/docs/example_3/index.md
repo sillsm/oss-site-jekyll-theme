@@ -1,6 +1,7 @@
 ---
 title: Example 3 index page
 category: example_3
+toc: false
 permalink: /example_3/index.html
 ---
 

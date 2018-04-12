@@ -16,26 +16,30 @@ layout: default
   {% include sidebar.html %}
 
   <article class="article-content">
-    <div class="article-content__header dock-header">
+    <header class="article-content__header dock-header">
       <h1 class="dock-header__title">{{title}}</h1>
       {% if page.status != 'todo' %}
         <p>{% include estimated-read-time.html %}</p>
       {% endif %}
 
       {% if page.description != null %}
-      <p class="dock-header__description">
-        {{page.description}}
-      </p>
+        <p class="dock-header__description">
+          {{page.description}}
+        </p>
       {% endif %}
-    </div>
-    <div class="article-content__body markdown-body">
+
+      {% if page.toc != false and site.render_toc_on_docs_layout != false%}
+        <div class="dock-header__toc markdown-body">
+          <h3>Table of contents:</h3>
+          {% include toc.html html=content %}
+        </div>
+      {% endif %}
+    </header>
+    <div class="js-article-content article-content__body markdown-body">
       {% if page.status == 'todo' %}
         Coming soon...
       {% else %}
-        {% if page.toc %}
-          <h3>Table of contents:</h3>
-        {% endif %}
-        {{ content | toc }}
+        {{ content }}
       {% endif %}
     </div>
   </article>

@@ -1,9 +1,10 @@
 ---
 title: Example 1 index page
 category: example_1
-toc: true
+toc: false
 permalink: /example_1/index.html
 ---
+
 # Non haec senectae Priamus Bellona dominumque Meriones
 
 ## Domo atque agit ora moresque patebant quem

@@ -42,7 +42,7 @@ body {
 }
 
 .article-content {
-  @include breakpoint-down(md) {
+  @include media-breakpoint-down(md) {
     margin-left: $sidebar-width-md;
     padding: $base-unit * 4 $base-unit * 4 $base-unit * 4 0;
   }
@@ -67,7 +67,7 @@ body {
 
 .article-content__header,
 .article-content__body {
-  @include breakpoint-down(md) {
+  @include media-breakpoint-down(md) {
     padding-left: $base-unit * 6;
   }
 
@@ -92,6 +92,10 @@ body {
   line-height: 1.3;
   margin-bottom: 0;
   margin-top: $base-unit;
+}
+
+.dock-header__toc {
+  margin-top: $base-unit * 8;
 }
 
 .section-nav {

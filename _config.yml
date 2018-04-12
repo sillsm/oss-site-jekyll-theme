@@ -15,7 +15,3 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "docs"
-
-toc:
-  min_level:        2
-  max_level:        4
