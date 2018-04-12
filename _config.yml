@@ -16,9 +16,6 @@ defaults:
     values:
       layout: "docs"
 
-plugins:
-  - jekyll-toc
-
 toc:
   min_level:        2
   max_level:        4
