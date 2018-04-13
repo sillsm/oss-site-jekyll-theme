@@ -2,14 +2,35 @@ main:
   - title: Example 1
     category: example_1
     url: /example_1/index.html
+    icon_url: '/assets/images/Asset-1.png'
     summary: documentation description
 
   - title: Example 2
     category: example_2
     url: /example_2/index.html
+    icon_url: '/assets/images/Asset-2.png'
     summary: documentation description
 
   - title: Example 3
     category: example_3
     url: /example_3/index.html
+    icon_url: '/assets/images/Asset-3.png'
+    summary: documentation description
+
+  - title: Example 4
+    category: example_4
+    url: /example_3/index.html
+    icon_url: '/assets/images/Asset-4.png'
+    summary: documentation description
+
+  - title: Example 5
+    category: example_5
+    url: /example_3/index.html
+    icon_url: '/assets/images/Asset-5.png'
+    summary: documentation description
+
+  - title: Example 6
+    category: example_6
+    url: /example_3/index.html
+    icon_url: '/assets/images/Asset-6.png'
     summary: documentation description

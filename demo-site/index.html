@@ -4,16 +4,34 @@ title: Home page
 permalink: /index.html
 ---
 
-<div class="container">
-  <div class="row">
-    <div class="col-1">
-      One of three columns
+<div class="page__content">
+  <div class="container">
+    <div class="row">
+      <div class="col-1">
+        One of three columns
+      </div>
+      <div class="col-1">
+        One of three columns
+      </div>
+      <div class="col-1">
+        One of three columns
+      </div>
     </div>
-    <div class="col-1">
-      One of three columns
-    </div>
-    <div class="col-1">
-      One of three columns
+  </div>
+</div>
+<div class="page__footer _bg-cod-gray">
+  <div class="container home-page-footer">
+    <div class="row justify-content-center">
+      {% for item in site.data.navigation.main %}
+        <a class="col-2 col-md-1 footer-menu" href="{{item.url}}">
+          <span class="footer-menu__icon">
+            <img src="{{item.icon_url}}">
+          </span>
+          <span class="footer-menu__title">
+            {{item.title}}
+          </span>
+        </a>
+      {% endfor %}
     </div>
   </div>
 </div>
