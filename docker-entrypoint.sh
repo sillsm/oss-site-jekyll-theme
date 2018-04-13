@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd /code
-rm -rf ./demo-site/_site/
+rm -rf /code/demo-site/_site/
 bundle install --local
 
 if [ "$JEKYLL_ENV" == "development" ]; then
