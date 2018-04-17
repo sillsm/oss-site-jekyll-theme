@@ -1,37 +1,18 @@
 ---
-layout: default
+layout: home
 title: Home page
+full_screen_nav_in_footer: true
 permalink: /index.html
 ---
 
-<div class="page__content">
-  <div class="container">
-    <div class="row">
-      <div class="col-1">
-        One of three columns
-      </div>
-      <div class="col-1">
-        One of three columns
-      </div>
-      <div class="col-1">
-        One of three columns
-      </div>
-    </div>
+<div class="home-page-header">
+  <div class="home-page-header__logo" style="left: -138px">
+    <img src="assets/logo-home.svg">
+  </div>
+  <div class="home-page-header__slogan text-lead">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
   </div>
 </div>
-<div class="page__footer _bg-cod-gray">
-  <div class="container home-page-footer">
-    <div class="row justify-content-center">
-      {% for item in site.data.navigation.main %}
-        <a class="col-2 col-md-1 footer-menu" href="{{item.url}}">
-          <span class="footer-menu__icon">
-            <img src="{{item.icon_url}}">
-          </span>
-          <span class="footer-menu__title">
-            {{item.title}}
-          </span>
-        </a>
-      {% endfor %}
-    </div>
-  </div>
-</div>
+<h1 class="text-h1">Home page h1 text</h1>
+<p class="text-accepted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque aut error incidunt porro quae quasi qui quidem? Consequatur dolore numquam odit quibusdam quidem ratione veritatis. Asperiores assumenda eaque perferendis?</p>
+<p class="text-accepted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At expedita mollitia neque quibusdam quisquam. Asperiores corporis culpa cum eum, impedit libero, neque officiis, omnis quae quidem rem rerum sed sunt.</p>

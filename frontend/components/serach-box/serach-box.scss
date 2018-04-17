@@ -1,0 +1,43 @@
+@import '../core/config';
+@import '../core/utils';
+
+
+.search-box {
+  position: relative;
+}
+
+.search-box__input {
+  padding-right: $base-unit * 5;
+}
+
+.search-box__button {
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  box-sizing: border-box;
+
+  cursor: pointer;
+
+  opacity: 0.4;
+  overflow: hidden;
+
+  width: 50px;
+  height: 100%;
+
+  border: 0;
+
+  cursor: pointer;
+
+  text-indent: -9999px;
+
+  background-color: transparent;
+  background-size: 50% auto;
+
+  background: url('../icons/search.svg') no-repeat 50% 50%;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

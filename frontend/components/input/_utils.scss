@@ -1,0 +1,55 @@
+@import './config';
+
+// Base styles
+@mixin base-input-style () {
+  position: relative;
+
+  box-sizing: border-box;
+  width: 100%;
+  padding: $input-padding-vertical $input-padding-horizontal $input-padding-vertical;
+
+  border: $input-item-border;
+  outline: none;
+
+  color: $input-item-text-color;
+  background-color: $input-item-bg-color;
+
+  line-height: $base-unit * 4 - 2px;
+
+  font-size: $input-font-size;
+}
+
+@mixin base-input-focus-style () {
+  box-shadow: 0 0 3px -1px $color-azure;
+}
+
+@mixin input () {
+  @include base-input-style ();
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    margin: 0;
+
+    -webkit-appearance: none;
+  }
+}
+
+// Error styles
+@mixin input-error-style() {
+  border: 1px solid $color-tomato;
+  box-shadow: 0 0 5px $color-tomato;
+}
+
+@mixin input-error-focus-style() {
+  outline-color: $color-tomato;
+  box-shadow: 0 0 3px 0 $color-tomato;
+}
+
+// Disables
+@mixin input-disabled () {
+  border-color: $color-dove-gray !important;
+  box-shadow: 0 0 0 0 !important;
+  background-color: $color-athens-gray;
+
+  cursor: not-allowed;
+}

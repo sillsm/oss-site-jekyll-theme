@@ -20,12 +20,12 @@
   overflow-y: auto;
 }
 
-.toc-tree {
+.sidebar-tree {
   box-sizing: border-box;
-  padding: 30px 0 10px;
+  padding: $base-unit * 4 0 $base-unit;
 }
 
-.toc-tree__title {
+.sidebar-tree__title {
   display: block;
   color: $color-dove-gray;
   text-decoration: none;
@@ -33,19 +33,17 @@
   padding: $base-unit / 2 $base-unit $base-unit * 2 $base-unit * 3;
 }
 
-.toc-tree__item {
+.sidebar-tree__item {
   font-weight: 500;
 }
 
-.toc-tree__link {
+.sidebar-tree__link {
   display: block;
   cursor: pointer;
   text-decoration: none;
   color: $color-dove-gray;
-  font-size: 16px;
-  line-height: 18px;
 
-  padding: $base-unit  $base-unit $base-unit $base-unit * 5;
+  padding: $base-unit / 2 $base-unit $base-unit / 2 $base-unit * 5;
 
   &:hover {
     color: $color-dove-gray;

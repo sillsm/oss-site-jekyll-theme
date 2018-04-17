@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<div class="page__content">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-6 col-md-4 text-flow home-page-content">
+        {{content}}
+
+        {% if site.search != false%}
+          <div class="home-page-search">
+            {% include search.html %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="page__footer">
+  {% include full-screen-navigation.html %}
+  {% include footer.html %}
+</div>

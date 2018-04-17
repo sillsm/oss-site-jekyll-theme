@@ -43,6 +43,10 @@ module.exports = (env) => {
               'postcss-loader'
             ]
           })
+        },
+        {
+          test: /\.svg$/,
+          use: 'svg-url-loader',
         }
       ]
     },
@@ -56,3 +60,4 @@ module.exports = (env) => {
     ]
   };
 };
+

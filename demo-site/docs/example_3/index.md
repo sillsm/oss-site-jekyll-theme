@@ -5,8 +5,6 @@ toc: false
 permalink: /example_3/index.html
 ---
 
-# Non haec senectae Priamus Bellona dominumque Meriones
-
 ## Domo atque agit ora moresque patebant quem
 
 Lorem markdownum detinuit videtur; *suis foedataque aethera* hoc, serpentum

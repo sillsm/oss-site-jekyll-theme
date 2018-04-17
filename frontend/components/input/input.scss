@@ -1,0 +1,27 @@
+/**
+ * Dependencies
+ */
+@import './utils';
+
+.input {
+  @include input();
+
+  &:active,
+  &:focus {
+    @include base-input-focus-style();
+  }
+
+  &[disabled],
+  &_disabled {
+    @include input-disabled();
+  }
+
+  &.error {
+    @include input-error-style();
+
+    &:active,
+    &:focus {
+      @include input-error-focus-style();
+    }
+  }
+}

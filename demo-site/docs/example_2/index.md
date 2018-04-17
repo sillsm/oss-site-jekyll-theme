@@ -4,8 +4,6 @@ category: example_2
 permalink: /example_2/index.html
 ---
 
-# Terram ora nubes idem dicemur lusuque
-
 ## Lacrimas somnoque nupta
 
 Lorem markdownum Agenorides sanguine pendens adsuerat posse, quod feci uterque

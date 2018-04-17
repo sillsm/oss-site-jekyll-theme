@@ -3,9 +3,8 @@ title: Example 1 index page
 category: example_1
 toc: false
 permalink: /example_1/index.html
+description: Leaena perdideris videtur neu longius precari est accipiam limite Penelopae quam ora. Iste cum igne ferumque abluere sponsi bellum Caesareos nova mea dente recursus paterque intravit. Casus nam Iasonis percussae similis spectant ad huic
 ---
-
-# Non haec senectae Priamus Bellona dominumque Meriones
 
 ## Domo atque agit ora moresque patebant quem
 

@@ -19,18 +19,18 @@ main:
 
   - title: Example 4
     category: example_4
-    url: /example_3/index.html
+    url: /example_4/index.html
     icon_url: '/assets/images/Asset-4.png'
     summary: documentation description
 
   - title: Example 5
     category: example_5
-    url: /example_3/index.html
+    url: /example_5/index.html
     icon_url: '/assets/images/Asset-5.png'
     summary: documentation description
 
   - title: Example 6
     category: example_6
-    url: /example_3/index.html
+    url: /example_6/index.html
     icon_url: '/assets/images/Asset-6.png'
     summary: documentation description

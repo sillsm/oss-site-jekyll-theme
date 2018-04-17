@@ -1,0 +1,23 @@
+<svg id="Слой_3" data-name="Слой 3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="388.23" height="120.26" viewBox="0 0 388.23 120.26">
+  <defs>
+    <linearGradient id="Новый_образец_градиента_2" data-name="Новый образец градиента 2" x1="-240.36" y1="878.3" x2="-227.35" y2="865.29" gradientTransform="matrix(3.05, 0, 0, -3.05, 751.46, 2695.79)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.3" stop-color="#00afff"/>
+      <stop offset="0.69" stop-color="#5282ff"/>
+      <stop offset="1" stop-color="#945dff"/>
+    </linearGradient>
+    <linearGradient id="Новый_образец_градиента_1" data-name="Новый образец градиента 1" x1="-226.99" y1="864.89" x2="-214.69" y2="852.59" gradientTransform="matrix(3.05, 0, 0, -3.05, 751.46, 2695.79)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.11" stop-color="#c757bc"/>
+      <stop offset="0.17" stop-color="#cd5ca9"/>
+      <stop offset="0.49" stop-color="#e8744f"/>
+      <stop offset="0.72" stop-color="#f88316"/>
+      <stop offset="0.82" stop-color="#ff8900"/>
+    </linearGradient>
+  </defs>
+  <title>Artboard 7</title>
+  <text transform="translate(133 99)" style="font-size: 80px;fill: #161616;font-family: Gotham-Bold, Gotham;font-weight: 700;letter-spacing: -0.049993896484375em">K<tspan x="54.4" y="0" style="letter-spacing: -0.039996337890625em">t</tspan><tspan x="84.4" y="0" style="letter-spacing: -0.025em">or</tspan></text>
+  <g>
+    <polygon points="78.73 40.59 59.25 21.11 39.61 1.47 18.95 22.12 0.49 40.59 39.61 79.7 78.73 40.59" style="fill: url(#Новый_образец_градиента_2)"/>
+    <polygon points="39.47 79.68 58.95 99.16 78.59 118.8 99.24 98.14 117.71 79.68 78.59 40.56 39.47 79.68" style="fill: url(#Новый_образец_градиента_1)"/>
+    <rect x="39.73" y="40.62" width="38.92" height="39.36"/>
+  </g>
+</svg>

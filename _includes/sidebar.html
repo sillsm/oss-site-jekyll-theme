@@ -1,5 +1,5 @@
 <div class="sidebar">
-  <div class="toc-tree">
+  <div class="sidebar-tree text-main">
     {% if page.category != null %}
       {% assign category_pages = site.pages | where: 'category', page.category %}
       {% assign sorted_category_pages = category_pages | sort: 'title', 'last' %}
@@ -7,16 +7,16 @@
 
       {% for item in site.data.navigation.main %}
         {% if item.category == page.category %}
-          <a class="toc-tree__title" href="{{ section.url| prepend: site.baseurl }}">{{item.title}}</a>
+          <a class="sidebar-tree__title" href="{{ section.url| prepend: site.baseurl }}">{{item.title}}</a>
 
-          <ul class="toc-tree__links-list">
+          <ul class="sidebar-tree__links-list">
             {% for item in sorted_category_pages %}
               {% if item.category == page.category and item.category != item.title %}
-                <li class="toc-tree__item">
+                <li class="sidebar-tree__item">
                   {% if (item.url == page.url) %}
-                    <a class="toc-tree__link _active">{{ item.title }}</a>
+                    <a class="sidebar-tree__link _active">{{ item.title }}</a>
                   {% else %}
-                    <a href="{{ item.url | prepend: site.baseurl }}" class="toc-tree__link">{{ item.title }}</a>
+                    <a href="{{ item.url | prepend: site.baseurl }}" class="sidebar-tree__link">{{ item.title }}</a>
                   {% endif %}
                 </li>
               {% endif %}

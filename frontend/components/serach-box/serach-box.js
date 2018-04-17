@@ -1,0 +1,1 @@
+import './serach-box.scss';
