@@ -2,7 +2,9 @@ version: "3"
 
 services:
   site:
-    image: kisenka/jekyll
+    build:
+      dockerfile: ./Dockerfile
+      context: ./
     restart: always
     tty: true
     ports:
@@ -12,4 +14,4 @@ services:
     working_dir: /code
     environment:
       JEKYLL_ENV: development
-    entrypoint: /code/docker-entrypoint.sh
+    command: rake preview
