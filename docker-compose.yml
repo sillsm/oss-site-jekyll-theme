@@ -2,9 +2,7 @@ version: "3"
 
 services:
   site:
-    build:
-      dockerfile: ./Dockerfile
-      context: ./
+    image: kisenka/jekyll
     restart: always
     tty: true
     ports:
