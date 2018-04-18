@@ -2,3 +2,10 @@ remote_theme: JetBrains/oss-site-jekyll-theme
 
 # Uncomment for local Docker preview
 # theme: jetbrains-oss-jekyll-theme
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "docs"
