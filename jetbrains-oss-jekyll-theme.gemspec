@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.license       = "Apache-2.0"
 
   spec.files         = `git ls-files -z`.split("\x0").select do |f|
-    f.match(%r!^(assets|_layouts|_includes|LICENSE|README)!i)
+    f.match(%r!^(assets|_layouts|_includes|README.md)!i)
   end
 
   spec.add_runtime_dependency "jekyll", "~> 3.7"
