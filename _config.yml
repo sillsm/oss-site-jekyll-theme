@@ -1,4 +1,4 @@
-source: ./demo-site
+source: ./docs
 
 exclude: ["Gemfile", "Gemfile.lock", "node_modules", ".idea", ".git", "_site"]
 
