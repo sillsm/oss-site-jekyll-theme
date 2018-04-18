@@ -505,6 +505,10 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
+"@jetbrains/logos@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@jetbrains/logos/-/logos-1.0.0.tgz#6c207471e1c1b3fd11336de199bd94b774b0e26d"
+
 "@sindresorhus/is@^0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
