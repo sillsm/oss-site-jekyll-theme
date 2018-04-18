@@ -1,0 +1,27 @@
+<svg id="Слой_3" data-name="Слой 3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="299.89" height="117.33" viewBox="0 0 299.89 117.33">
+  <defs>
+    <linearGradient id="grad-2" data-name="Новый образец градиента 2" x1="-240.85" y1="876.84" x2="-227.84" y2="863.82" gradientTransform="matrix(3.05, 0, 0, -3.05, 752.46, 2689.86)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.3" stop-color="#00afff"/>
+      <stop offset="0.69" stop-color="#5282ff"/>
+      <stop offset="1" stop-color="#945dff"/>
+    </linearGradient>
+    <linearGradient id="grad-1" data-name="Новый образец градиента 1" x1="-227.48" y1="863.43" x2="-215.18" y2="851.12" gradientTransform="matrix(3.05, 0, 0, -3.05, 752.46, 2689.86)" gradientUnits="userSpaceOnUse">
+      <stop offset="0.11" stop-color="#c757bc"/>
+      <stop offset="0.17" stop-color="#cd5ca9"/>
+      <stop offset="0.49" stop-color="#e8744f"/>
+      <stop offset="0.72" stop-color="#f88316"/>
+      <stop offset="0.82" stop-color="#ff8900"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <path d="M139.23,41.53h12.32V66l22.72-24.48h14.88l-22.8,23.76,23.84,32.24h-14.8L158,73.69l-6.48,6.72V97.53H139.23Z" style="fill: #161616"/>
+    <path d="M194.35,85.37V65.05h-5.12V54.65h5.12v-11h12.16v11h10.08v10.4H206.51V83.37c0,2.8,1.2,4.16,3.92,4.16a12.37,12.37,0,0,0,6-1.52v9.76a17.93,17.93,0,0,1-9.6,2.48C199.39,98.25,194.35,95.29,194.35,85.37Z" style="fill: #161616"/>
+    <path d="M220.27,76.33v-.16c0-12.32,9.92-22.32,23.28-22.32S266.67,63.69,266.67,76v.16c0,12.32-9.92,22.32-23.28,22.32S220.27,88.65,220.27,76.33Zm34.4,0v-.16c0-6.32-4.56-11.84-11.28-11.84-7,0-11.12,5.36-11.12,11.68v.16c0,6.32,4.56,11.84,11.28,11.84C250.51,88,254.67,82.65,254.67,76.33Z" style="fill: #161616"/>
+    <path d="M273.47,54.65h12.16v8.64c2.48-5.92,6.48-9.76,13.68-9.44V66.57h-.64c-8.08,0-13,4.88-13,15.12V97.53H273.47Z" style="fill: #161616"/>
+  </g>
+  <g>
+    <polygon points="78.24 39.12 58.76 19.64 39.12 0 18.46 20.66 0 39.12 39.12 78.24 78.24 39.12" style="fill: url(#grad-2)"/>
+    <polygon points="38.98 78.21 58.46 97.69 78.1 117.33 98.75 96.68 117.22 78.21 78.1 39.09 38.98 78.21" style="fill: url(#grad-1)"/>
+    <rect x="39.24" y="39.15" width="38.92" height="39.36"/>
+  </g>
+</svg>
