@@ -11,9 +11,9 @@
     {% for item in site.data.navigation.main %}
       <li class="header-links-list__item">
         {% if page.url == item.url or page.category == item.category %}
-          <a href="{{item.url | prepend: site.baseurl  }}" class="header-links-list__link _active">{{item.title}}</a>
+          <a href="{{item.url | relative_url  }}" class="header-links-list__link _active">{{item.title}}</a>
         {% else %}
-          <a href="{{item.url | prepend: site.baseurl }}" class="header-links-list__link">{{item.title}}</a>
+          <a href="{{item.url | relative_url }}" class="header-links-list__link">{{item.title}}</a>
         {% endif %}
       </li>
     {% endfor %}
