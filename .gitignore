@@ -14,4 +14,3 @@ yarn-error.log*
 node_modules/
 .yarn-integrity
 .DS_Store
-assets/build
