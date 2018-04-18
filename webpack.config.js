@@ -44,9 +44,17 @@ module.exports = (env) => {
             ]
           })
         },
+
         {
-          test: /\.svg$/,
-          use: 'svg-url-loader',
+          test: /\.(png|ico|svg)$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: '[name].[ext]'
+              }
+            }
+          ],
         }
       ]
     },
