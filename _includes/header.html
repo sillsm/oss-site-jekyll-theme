@@ -1,7 +1,7 @@
 <header class="header">
   <div class="header-logo">
-    <a href="/" class="header-logo__link">
-      <img src="{{site.header_logo_url}}"
+    <a href="{{ '/' | relative_url }}" class="header-logo__link">
+      <img src="{{site.header_logo_url | relative_url }}"
            class="header-logo__image"
            style="max-height: 48px"
            alt="{{site.project_name}}">

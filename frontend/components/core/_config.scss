@@ -1,4 +1,11 @@
+$base-unit: 8px;
+
+// Fonts
 $font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+$font-weight-bold: 700;
+$font-weight-book: 400;
+$font-weight-light: 300;
 
 // Colors system
 $color-white: #ffffff;
@@ -10,12 +17,6 @@ $color-dark: #161616;
 $color-azure: #27a4f7;
 $color-tomato: #ec5424;
 
-$font-weight-bold: 700;
-$font-weight-book: 400;
-$font-weight-light: 300;
-
-$base-unit: 8px;
-
 // Header
 $header-height: $base-unit * 8;
 
@@ -23,8 +24,7 @@ $header-height: $base-unit * 8;
 $sidebar-width: $base-unit * 38;
 $sidebar-width-md: $base-unit * 28;
 
-
-// Grid
+// Layout
 $grid-breakpoints: (
   xs: 0,
   sm: 640px,
@@ -32,11 +32,9 @@ $grid-breakpoints: (
   lg: 1300px,
   xlg: 1540px,
 );
-
 $container-max-widths: (
   md: 1000px,
   lg: 1300px
 );
-
 $grid-columns: 6;
 $grid-gutter-width: 30px;
