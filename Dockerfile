@@ -8,4 +8,4 @@ RUN apt-get update && \
 	bundle install --local
 
 EXPOSE 4000
-ENTRYPOINT []
+ENTRYPOINT ["jekyll", "serve", "--watch", "--force_polling", "--host", "0.0.0.0"]
