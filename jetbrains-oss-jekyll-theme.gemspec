@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "jetbrains-oss-jekyll-theme"
-  spec.version       = "0.1.0"
+  spec.version       = "0.0.1"
   spec.authors       = ["JetBrains"]
   spec.email         = [""]
 
