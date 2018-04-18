@@ -36,8 +36,8 @@ task :preview do
   cfg = YAML.load_file('_config.yml')
 
   options = cfg.merge({
-    "source"        => base.join('demo-site').to_s,
-    "destination"   => base.join('demo-site/_site').to_s,
+    "source"        => base.join('docs').to_s,
+    "destination"   => base.join('docs/_site').to_s,
     "force_polling" => true,
     "serving"       => true,
     "theme"         => "jetbrains-oss-jekyll-theme"

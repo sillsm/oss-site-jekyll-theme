@@ -11,9 +11,9 @@
 
 **All in one option (suitable for content authors/writers)**:
 - `docker-compose -f docker-compose.preview.yml up`. It will create site on [localhost:4000](http://localhost:4000) 
-  and build all stuff to `demo-site/_site`.
+  and build all stuff to `docs/_site`.
 
 **Developer has 2-step option**:
 - `docker-compose up` will run only site at [localhost:4000](http://localhost:4000).
-- `yarn start` will run webpack in watch mode. Assets will build in `demo-site/_site/assets/build`. 
+- `yarn start` will run webpack in watch mode. Assets will build in `docs/_site/assets/build`. 
    Don't forget to install frontend dependencies first - `yarn install`.
