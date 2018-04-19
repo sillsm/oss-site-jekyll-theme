@@ -14,6 +14,7 @@ module.exports = (env) => {
 
     output: {
       path: resolve(__dirname, 'assets/build'),
+      publicPath: '/assets/build/',
       filename: '[name].js'
     },
 
@@ -60,7 +61,10 @@ module.exports = (env) => {
     },
 
     devServer: {
-      port: 9000
+      port: 9000,
+      proxy: {
+        '/': 'http://localhost:4000'
+      }
     },
 
     plugins: [
