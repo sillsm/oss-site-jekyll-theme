@@ -1,8 +1,9 @@
 ---
-title: Example 1 index page
-category: example_1
+title: index.md top level (category 1)
+category: category_1
 toc: false
-permalink: /example_1/index.html
+priority: 1000
+permalink: /category_1/index.html
 description: Leaena perdideris videtur neu longius precari est accipiam limite Penelopae quam ora. Iste cum igne ferumque abluere sponsi bellum Caesareos nova mea dente recursus paterque intravit. Casus nam Iasonis percussae similis spectant ad huic
 ---
 

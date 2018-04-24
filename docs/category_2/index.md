@@ -1,7 +1,7 @@
 ---
 title: Example 2
-category: example_2
-permalink: /example_2/index.html
+category: category_2
+permalink: /category_2/index.html
 ---
 
 ## Lacrimas somnoque nupta

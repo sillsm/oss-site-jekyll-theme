@@ -1,0 +1,31 @@
+{% capture html %}
+<ul class="sidebar-tree">
+   {% if page.category != null %}
+
+      {% assign entries = site.pages | sort: "path" %}
+      {% assign sorted_category_pages = entries | sort: 'title', 'last' %}
+      {% assign sorted_category_pages = sorted_category_pages | sort: 'priority', 'last' %}
+
+      {% for entry in sorted_category_pages %}
+          {% assign slug = entry.url | split: "/" | last %}
+          {% assign current = entry.url | remove: slug %}
+
+          {% if current == include.context %}
+              <li class="sidebar-tree__item {% if entry.children %}_has-children js-collapse collapse{% endif %}
+                                            {% if page.url contains entry.url %} _is-open{% endif %}">
+                  <a href="{{ entry.url }}"
+                     class="sidebar-tree__link {% if page.url contains entry.url %}_active{% endif %}">{{ entry.title }}</a>
+
+                  {% if entry.children %}
+                    <div class="js-toggle-collapse-button sidebar-tree__collapse-button collapse__button"></div>
+                    <div class="js-collapse-content collapse__content">
+                      {% include nav.html context=entry.children %}
+                    </div>
+                  {% endif %}
+              </li>
+          {% endif %}
+
+      {% endfor %}
+  {% endif %}
+</ul>
+{% endcapture %}{{ html | strip_newlines | replace:'    ','' | replace:'    ','' | replace:'  ',' ' }}

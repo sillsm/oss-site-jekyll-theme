@@ -1,36 +1,36 @@
 main:
-  - title: Example 1
-    category: example_1
-    url: /example_1/index.html
-    icon_url: '/assets/images/Asset-1.png'
+  - title: Category 1
+    category: category_1
+    url: /category_1/
+    icon_url: '/assets/images/icon_quick-start.svg'
     summary: documentation description
 
-  - title: Example 2
-    category: example_2
-    url: /example_2/index.html
-    icon_url: '/assets/images/Asset-2.png'
+  - title: Category 2
+    category: category_2
+    url: /category_2/
+    icon_url: '/assets/images/icon_servers.svg'
     summary: documentation description
 
-  - title: Example 3
-    category: example_3
-    url: /example_3/index.html
-    icon_url: '/assets/images/Asset-3.png'
+  - title: Category 3
+    category: category_3
+    url: /category_3/
+    icon_url: '/assets/images/icon_samples.svg'
     summary: documentation description
 
-  - title: Example 4
-    category: example_4
-    url: /example_4/index.html
-    icon_url: '/assets/images/Asset-4.png'
+  - title: Category 4
+    category: category_4
+    url: /category_4/
+    icon_url: '/assets/images/icon_clients.svg'
     summary: documentation description
 
-  - title: Example 5
-    category: example_5
-    url: /example_5/index.html
-    icon_url: '/assets/images/Asset-5.png'
+  - title: Category 5
+    category: category_5
+    url: /category_5/
+    icon_url: '/assets/images/icon_features.svg'
     summary: documentation description
 
-  - title: Example 6
-    category: example_6
-    url: /example_6/index.html
-    icon_url: '/assets/images/Asset-6.png'
+  - title: Category 6
+    category: category_6
+    url: /category_6/
+    icon_url: '/assets/images/icon_advanced.svg'
     summary: documentation description

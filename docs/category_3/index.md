@@ -1,8 +1,8 @@
 ---
 title: Example 3 index page
-category: example_3
+category: category_3
 toc: false
-permalink: /example_3/index.html
+permalink: /category_3/index.html
 ---
 
 ## Domo atque agit ora moresque patebant quem

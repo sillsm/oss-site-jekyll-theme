@@ -4,7 +4,7 @@
   box-sizing: border-box;
   padding-top: $base-unit * 2;
   padding-bottom: $base-unit * 2;
-  background-color: $color-cod-gray;
+  background-color: $color-athens-gray;
 }
 
 .nav-with-icons {
@@ -15,7 +15,7 @@
   padding-top: $base-unit * 2;
   padding-bottom: $base-unit * 2;
 
-  color: $color-white;
+  color: $color-dark;
   text-align: center;
   text-decoration: none;
 
@@ -24,8 +24,7 @@
   }
 }
 
-.nav-with-icons__icon {
-}
+.nav-with-icons__icon {}
 
 .nav-with-icons__title {
   font-size: 16px;

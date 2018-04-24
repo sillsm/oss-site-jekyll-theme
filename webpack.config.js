@@ -1,4 +1,5 @@
 const { resolve } = require('path');
+const Webpack = require('webpack');
 
 const ExtractPlugin = require('extract-text-webpack-plugin');
 
@@ -68,7 +69,12 @@ module.exports = (env) => {
     },
 
     plugins: [
-      extractor
+      extractor,
+      new Webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery'
+      }),
     ]
   };
 };

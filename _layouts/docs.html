@@ -13,7 +13,13 @@ layout: default
 </div>
 
 <div class="page__content _layout-docs">
-  {% include sidebar.html %}
+  <div class="sidebar text-main">
+    {% for item in site.data.navigation.main %}
+      {% if item.category == page.category %}
+        {% include nav.html context=item.url %}
+      {% endif %}
+    {% endfor %}
+  </div>
 
   <article class="article-content page">
     <header class="article-content__header dock-header page__header">

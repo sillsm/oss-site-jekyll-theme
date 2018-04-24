@@ -10,6 +10,7 @@
   width: $sidebar-width;
   max-width: $sidebar-width;
   background-color: $color-athens-gray;
+  padding-top: $base-unit * 4;
 
   position: absolute;
   z-index: 1;
@@ -22,19 +23,18 @@
 
 .sidebar-tree {
   box-sizing: border-box;
-  padding: $base-unit * 4 0 $base-unit;
-}
-
-.sidebar-tree__title {
-  display: block;
-  color: $color-dove-gray;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: $base-unit / 2 $base-unit $base-unit * 2 $base-unit * 3;
+  padding: 0 0 $base-unit $base-unit * 4;
 }
 
 .sidebar-tree__item {
   font-weight: 500;
+  position: relative;
+}
+
+.sidebar-tree__collapse-button {
+  position: absolute;
+  top: 0;
+  left: -$base-unit * 4;
 }
 
 .sidebar-tree__link {
@@ -42,8 +42,9 @@
   cursor: pointer;
   text-decoration: none;
   color: $color-dove-gray;
+  font-size: 14px;
 
-  padding: $base-unit / 2 $base-unit $base-unit / 2 $base-unit * 5;
+  padding: $base-unit / 2 $base-unit $base-unit / 2 0;
 
   &:hover {
     color: $color-dove-gray;
@@ -55,6 +56,33 @@
     color: $color-dark;
     text-decoration: none !important;
     cursor: default;
-    background-color: darken($color-athens-gray, 3%);
+  }
+}
+
+.collapse {
+  &._is-open {}
+}
+
+.collapse__button {
+  width: $base-unit * 4;
+  height: $base-unit * 4;
+
+  background: url("../icons/arrow.svg") no-repeat 50% 50%;
+  background-size: 6px auto;
+  transform: rotate(-90deg);
+  transition: transform 200ms;
+
+  cursor: pointer;
+
+  .collapse._is-open > & {
+    transform: rotate(90deg);
+  }
+}
+
+.collapse__content {
+  display: none;
+
+  .collapse._is-open > & {
+    display: block;
   }
 }
