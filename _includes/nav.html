@@ -13,7 +13,7 @@
           {% if current == include.context %}
               <li class="sidebar-tree__item {% if entry.children %}_has-children js-collapse collapse{% endif %}
                                             {% if page.url contains entry.url %} _is-open{% endif %}">
-                  <a href="{{ entry.url }}"
+                  <a href="{{ entry.url | relative_url }}"
                      class="sidebar-tree__link {% if page.url contains entry.url %}_active{% endif %}">{{ entry.title }}</a>
 
                   {% if entry.children %}
