@@ -48,12 +48,24 @@ module.exports = (env) => {
         },
 
         {
-          test: /\.(png|ico|svg)$/,
+          test: /\.(png|ico)$/,
           use: [
             {
               loader: 'file-loader',
               options: {
                 name: '[name].[ext]'
+              }
+            }
+          ],
+        },
+
+        {
+          test: /\.(svg)$/,
+          use: [
+            {
+              loader: 'svg-url-loader',
+              options: {
+                limit: 10000
               }
             }
           ],
