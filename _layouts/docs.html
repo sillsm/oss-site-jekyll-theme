@@ -16,7 +16,9 @@ layout: default
   <div class="sidebar text-main">
     {% for item in site.data.navigation.main %}
       {% if item.category == page.category %}
-        {% include nav.html context=item.url %}
+        {% assign slug = item.url | split: "/" | last %}
+        {% assign item_url = item.url | remove: slug %}
+        {% include nav.html context=item_url %}
       {% endif %}
     {% endfor %}
   </div>
