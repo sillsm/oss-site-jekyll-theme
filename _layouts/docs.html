@@ -17,7 +17,13 @@ layout: default
     {% for item in site.data.navigation.main %}
       {% if item.category == page.category %}
         {% assign slug = item.url | split: "/" | last %}
-        {% assign item_url = item.url | remove: slug %}
+
+        {% if slug == 'index.html' %}
+          {% assign item_url = item.url | remove: slug %}
+        {% else %}
+          {% assign item_url = item.url %}
+        {% endif %}
+
         {% include nav.html context=item_url %}
       {% endif %}
     {% endfor %}
