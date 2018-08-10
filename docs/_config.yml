@@ -1,5 +1,3 @@
-remote_theme: JetBrains/oss-site-jekyll-theme
-
 project_name: 'Project name'
 header_logo_url: 'assets/build/jetbrains-simple.svg'
 render_toc_on_docs_layout: true
