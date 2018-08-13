@@ -7,7 +7,7 @@ permalink: /category_1/index.html
 description: Leaena perdideris videtur neu longius precari est accipiam limite Penelopae quam ora. Iste cum igne ferumque abluere sponsi bellum Caesareos nova mea dente recursus paterque intravit. Casus nam Iasonis percussae similis spectant ad huic
 ---
 
-## Domo atque agit ora moresque patebant quem
+## Somo atque agit ora moresque patebant quem
 
 Lorem markdownum detinuit videtur; *suis foedataque aethera* hoc, serpentum
 noctis occuluere deum. Concreta Cereremque si qui fonte senectus volventia
